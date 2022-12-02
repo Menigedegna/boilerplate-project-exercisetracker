@@ -118,7 +118,6 @@ app.post("/api/users/:_id/exercises", function (req, res) {
         logUser["log"] = [newFields];
         LOGs.push(logUser);   
       }
-      console.log(LOGs)
       
       // return object with user info and exercise fields
       var exercice = {...searchInUser[0], ...newFields};
